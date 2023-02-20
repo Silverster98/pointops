@@ -1,4 +1,6 @@
 #python3 setup.py install
+import os
+os.environ["TORCH_CUDA_ARCH_LIST"] = "6.1+PTX"
 from setuptools import setup
 from torch.utils.cpp_extension import BuildExtension, CUDAExtension
 import os
